@@ -141,7 +141,7 @@ python eda_analysis.py
 Run the Streamlit Application
 streamlit run churn_app.py
 
-Use Cases
+###Use Cases
 
 Customer retention strategy
 
@@ -153,7 +153,7 @@ Academic mini or major project
 
 Interview and placement showcase
 
-Technologies Used
+###Technologies Used
 
 Python
 
@@ -167,14 +167,14 @@ Streamlit
 
 Joblib
 
-Author
+##Author
 
 Suraj Dias
 B.E. Student | Machine Learning and Data Science Enthusiast
 
 GitHub: https://github.com/SurajDias
 
-License
+##License
 
 This project is for educational and learning purposes.
 
