@@ -1,48 +1,46 @@
 # Customer Churn Prediction System
 
-An end-to-end Machine Learning project that predicts whether a customer is likely to churn (leave a service) using historical data.
+An end-to-end Machine Learning project that predicts whether a customer is likely to churn (leave a service) using historical data.  
 The project includes data analysis, model training, and an interactive Streamlit web application for real-time predictions and insights.
 
- Project Overview
+---
 
-Customer churn is a critical business problem where companies lose customers to competitors.
+## Project Overview
+
+Customer churn is a critical business problem where companies lose customers to competitors.  
 This project aims to:
 
-Analyze customer behavior patterns
+- Analyze customer behavior patterns  
+- Predict churn probability using Machine Learning  
+- Visualize insights using Exploratory Data Analysis (EDA)  
+- Provide an interactive dashboard for decision-making  
 
-Predict churn probability using Machine Learning
+---
 
-Visualize insights using EDA
+## Features
 
-Provide an interactive dashboard for decision-making
+- Exploratory Data Analysis (EDA) with visual insights  
+- Machine Learning model using Random Forest with calibration  
+- Class imbalance handling using up-sampling  
+- Feature scaling and one-hot encoding  
+- Streamlit web application for live predictions  
+- Simple login authentication system  
+- Cyber-risk score simulation using extended feature logic  
 
- Features
+---
 
- Exploratory Data Analysis (EDA) with visual insights
+## Project Structure
 
- Machine Learning model (Random Forest + Calibration)
-
- Class imbalance handling using up-sampling
-
- Feature scaling & one-hot encoding
-
- Streamlit web app for live predictions
-
- Simple login authentication system
-
- Cyber-risk score simulation (extended feature logic)
-
-##🗂️ Project Structure
 Customer-Churn-Prediction/
 │
-├── Telco-Customer-Churn.csv     # Dataset
-├── churn_model.py               # Model training & saving
-├── eda_analysis.py              # EDA & visualization
-├── churn_app.py                 # Streamlit web application
+├── Telco-Customer-Churn.csv # Dataset
+├── churn_model.py # Model training and saving
+├── eda_analysis.py # Exploratory data analysis and visualization
+├── churn_app.py # Streamlit web application
 │
-├── churn_model.pkl              # Trained ML model
-├── model_columns.pkl            # Model feature columns
-├── scaler.pkl                   # StandardScaler object
+├── churn_model.pkl # Trained machine learning model
+├── model_columns.pkl # Model feature columns
+├── scaler.pkl # StandardScaler object
 │
 ├── churn_distribution.png
 ├── churn_by_contract.png
@@ -51,108 +49,99 @@ Customer-Churn-Prediction/
 │
 └── README.md
 
- Dataset
 
-Dataset: Telco Customer Churn Dataset
+---
 
-Source: Public telecom customer dataset
+## Dataset
 
-Target Variable: Churn (Yes / No)
+- Dataset: Telco Customer Churn Dataset  
+- Source: Public telecom customer dataset  
+- Target Variable: Churn (Yes / No)
 
 Key features include:
+- Tenure  
+- Monthly and Total Charges  
+- Contract type  
+- Payment method  
+- Internet service  
 
-Tenure
+---
 
-Monthly & Total Charges
-
-Contract type
-
-Payment method
-
-Internet service
-
- Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 EDA includes:
+- Churn distribution analysis  
+- Churn versus contract type  
+- Monthly charges versus tenure  
+- Simulated cybersecurity risk comparison  
 
-Churn distribution analysis
+Visualizations are saved as PNG files and displayed in the Streamlit dashboard.
 
-Churn vs contract type
+---
 
-Monthly charges vs tenure
+## Machine Learning Model
 
-Simulated cybersecurity risk comparison
+- Algorithm: Random Forest Classifier  
 
-Visualizations are saved as PNG files and displayed in the dashboard.
+Preprocessing steps:
+- Missing value handling  
+- One-hot encoding  
+- Feature scaling  
 
-Machine Learning Model
+Additional techniques:
+- Class imbalance handling using up-sampling  
+- Model calibration using CalibratedClassifierCV  
 
-Algorithm: Random Forest Classifier
-
-Preprocessing:
-
-Missing value handling
-
-One-hot encoding
-
-Feature scaling
-
-Class Imbalance Handling: Up-sampling
-
-Model Calibration: CalibratedClassifierCV
-
-Evaluation: Accuracy & classification report
+Evaluation:
+- Accuracy  
+- Classification report  
 
 The trained model and preprocessing objects are saved using joblib.
 
- Streamlit Web Application
+---
 
-The Streamlit app provides:
+## Streamlit Web Application
 
- Login System
+The Streamlit app provides the following functionalities:
 
+### Login System
 Simple authentication to access the dashboard.
 
- Churn Prediction
+### Churn Prediction
+Users input customer details to obtain:
+- Churn probability  
+- Retention or churn classification  
+- Adjusted prediction using business logic  
 
-Users input customer details to get:
-
-Churn probability
-
-Retention/churn classification
-
-Adjusted prediction using business logic
-
- Cyber Risk Score
-
+### Cyber Risk Score
 A simulated risk score based on:
+- Failed logins  
+- Security alerts  
+- Two-factor authentication  
+- Data breach involvement  
 
-Failed logins
+### Insights Dashboard
+Displays EDA visualizations for better understanding of customer churn behavior.
 
-Security alerts
+---
 
-Two-factor authentication
+## How to Run the Project
 
-Data breach involvement
-
- Insights Dashboard
-
-Displays EDA visualizations for better understanding of churn behavior.
-
- How to Run the Project
-1️⃣ Install Dependencies
+### 1. Install Dependencies
+```bash
 pip install pandas numpy scikit-learn streamlit matplotlib seaborn joblib pillow
 
-2️⃣ Train the Model (Optional)
+
+Train the Model 
 python churn_model.py
 
-3️⃣ Generate EDA Visuals (Optional)
+Generate EDA Visuals 
 python eda_analysis.py
 
-4️⃣ Run the Streamlit App
+Run the Streamlit Application
 streamlit run churn_app.py
 
-📌 Use Cases
+Use Cases
 
 Customer retention strategy
 
@@ -160,11 +149,11 @@ Business decision support
 
 Data science portfolio project
 
-Academic mini/major project
+Academic mini or major project
 
-Interview & placement showcase
+Interview and placement showcase
 
- Technologies Used
+Technologies Used
 
 Python
 
@@ -178,13 +167,15 @@ Streamlit
 
 Joblib
 
- Author
+Author
 
 Suraj Dias
-B.E. Student | Machine Learning & Data Science Enthusiast
+B.E. Student | Machine Learning and Data Science Enthusiast
 
 GitHub: https://github.com/SurajDias
 
-📜 License
+License
 
 This project is for educational and learning purposes.
+
+
