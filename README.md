@@ -54,11 +54,11 @@ Customer-Churn-Prediction/
 
 ## Dataset
 
-- Dataset: Telco Customer Churn Dataset  
-- Source: Public telecom customer dataset  
-- Target Variable: Churn (Yes / No)
+- **Dataset:** Telco Customer Churn Dataset  
+- **Source:** Public telecom customer dataset  
+- **Target Variable:** Churn (Yes / No)
 
-Key features include:
+**Key features include:**
 - Tenure  
 - Monthly and Total Charges  
 - Contract type  
@@ -81,18 +81,18 @@ Visualizations are saved as PNG files and displayed in the Streamlit dashboard.
 
 ## Machine Learning Model
 
-- Algorithm: Random Forest Classifier  
+- **Algorithm:** Random Forest Classifier  
 
-Preprocessing steps:
+**Preprocessing steps:**
 - Missing value handling  
 - One-hot encoding  
 - Feature scaling  
 
-Additional techniques:
+**Additional techniques:**
 - Class imbalance handling using up-sampling  
 - Model calibration using CalibratedClassifierCV  
 
-Evaluation:
+**Evaluation:**
 - Accuracy  
 - Classification report  
 
@@ -130,19 +130,13 @@ Displays EDA visualizations for better understanding of customer churn behavior.
 ### 1. Install Dependencies
 ```bash
 pip install pandas numpy scikit-learn streamlit matplotlib seaborn joblib pillow
-
-
-Train the Model 
+2. Train the Model
 python churn_model.py
-
-Generate EDA Visuals 
+3. Generate EDA Visuals
 python eda_analysis.py
-
-Run the Streamlit Application
+4. Run the Streamlit Application
 streamlit run churn_app.py
-
-###Use Cases
-
+Use Cases
 Customer retention strategy
 
 Business decision support
@@ -153,8 +147,7 @@ Academic mini or major project
 
 Interview and placement showcase
 
-###Technologies Used
-
+Technologies Used
 Python
 
 Pandas, NumPy
@@ -167,15 +160,13 @@ Streamlit
 
 Joblib
 
-##Author
-
+Author
 Suraj Dias
 B.E. Student | Machine Learning and Data Science Enthusiast
 
 GitHub: https://github.com/SurajDias
 
-##License
-
+License
 This project is for educational and learning purposes.
 
 
